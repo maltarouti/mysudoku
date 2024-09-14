@@ -1,9 +1,12 @@
+from typing import List
 
 
 class Sudoku:
     def __init__(self, dimensions: int, difficulty: float) -> None:
         self.dimensions = dimensions
         self.difficulty = difficulty
+
+        self.sudoku: List[list] = []
 
     def _generate(self) -> None:
         ...
@@ -14,5 +17,5 @@ class Sudoku:
     def solve(self) -> None:
         ...
 
-    def solution(self) -> None:
+    def solution(self) -> List[list]:
         ...
