@@ -1,6 +1,6 @@
-from .sudoku9x9 import Sudoku9x9
+from .sudoku import Sudoku
 
 
 __all__ = [
-    "Sudoku9x9",
+    "Sudoku",
 ]
