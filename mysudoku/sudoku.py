@@ -7,8 +7,9 @@ class Sudoku:
         self.base = dimension
         self.difficulty = difficulty
         self.puzzle: List[List[str]] = []
+        self._generate()
 
-    def generate(self) -> None:
+    def _generate(self) -> None:
         base = self.base
         side = base * base
 
@@ -36,6 +37,3 @@ class Sudoku:
     def show(self) -> None:
         for line in self.sudoku:
             print(" ".join(str(n) for n in line))
-
-    def solution(self) -> List[List[str]]:
-        return self.sudoku
