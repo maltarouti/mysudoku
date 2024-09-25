@@ -1,4 +1,4 @@
-# sudoku
+# My Sudoku
 Sudoku generator and solver
 
 
