@@ -6,8 +6,14 @@ class Sudoku:
     def __init__(self, dimension: int, difficulty: float) -> None:
         self.base = dimension
         self.difficulty = difficulty
-        self.puzzle: List[List[str]] = []
+        self.board: List[List[str]] = []
         self._generate()
+
+    def __str__(self) -> str:
+        string = ""
+        for line in self.sudoku:
+            string += " ".join(str(n) for n in line) + "\n"
+        return string
 
     def _generate(self) -> None:
         base = self.base
@@ -32,8 +38,4 @@ class Sudoku:
         for p in random.sample(range(squares), empties):
             board[p // side][p % side] = "."
 
-        self.sudoku = board
-
-    def show(self) -> None:
-        for line in self.sudoku:
-            print(" ".join(str(n) for n in line))
+        self.List[List[str]] = board
