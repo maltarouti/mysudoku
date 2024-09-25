@@ -11,7 +11,7 @@ class Sudoku:
 
     def __str__(self) -> str:
         string = ""
-        for line in self.sudoku:
+        for line in self.board:
             string += " ".join(str(n) for n in line) + "\n"
         return string
 
@@ -38,4 +38,4 @@ class Sudoku:
         for p in random.sample(range(squares), empties):
             board[p // side][p % side] = "."
 
-        self.List[List[str]] = board
+        self.board = board

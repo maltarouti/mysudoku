@@ -12,7 +12,8 @@ Example:
 from mysudoku import Sudoku
 
 sudoku = Sudoku(dimension=3, difficulty=0.5)
-sudoku.show()
+
+print(sudoku)
 
 '''
 9 8 . 5 1 . . . .

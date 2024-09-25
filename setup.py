@@ -9,7 +9,7 @@ def read_readme():
 
 setup(
     name='mysudoku',
-    version='1.2',
+    version='1.3',
     author='Murtada Altarouti',
     author_email='murtada.altarouti@gmail.com',
     description='A Sudoku generator and solver',
